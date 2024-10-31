@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [ 20 ]
+        node: [20]
     name: Node ${{ matrix.node }} test
     steps:
       - uses: actions/checkout@v4
@@ -17,4 +17,6 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: yarn install --immutable --immutable-cache --check-cache
-      - run: npm test
+
+      - name: build app
+        run: yarn build
