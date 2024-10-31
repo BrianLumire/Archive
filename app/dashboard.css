@@ -1,0 +1,27 @@
+.dts1 {
+  @apply text-2xl md:text-4xl leading-tight;
+}
+.dts2 {
+  @apply text-xl md:text-3xl leading-tight;
+}
+.dts3 {
+  @apply text-lg md:text-2xl leading-tight;
+}
+.dts4 {
+  @apply text-base md:text-xl leading-tight;
+}
+.dts5 {
+  @apply text-sm md:text-lg leading-tight;
+}
+.dts6 {
+  @apply text-xs md:text-base leading-tight;
+}
+.dts7 {
+  @apply text-xs md:text-sm leading-tight;
+}
+.rpx {
+  @apply px-2 md:px-4;
+}
+.rp {
+  @apply px-2 py-3 md:p-4;
+}

@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    //.next and all other next.js typescrrip tailwind css and yarn related files
+    // "**/.next": true,
+    "**/node_modules": true,
+    "**/yarn.lock": true,
+    "**/package-lock.json": true,
+    "**/tailwind.config.js": true,
+    "**/postcss.config.js": true
+    // "**/tsconfig.json": true
+  }
+}
