@@ -1,2 +1,0 @@
-# GmotivateDashboard
-Gmotivate Dashboard
