@@ -33,8 +33,6 @@ import { useRouter } from "next/navigation";
 import { useAuth } from "@/components/dashboard/auth/AuthContext";
 import { toast } from "sonner";
 
-export const dynamic = 'force-dynamic';
-
 const SignIn = () => {
   const { login } = useAuth();
   const form = useForm<ILoginSchema>({
