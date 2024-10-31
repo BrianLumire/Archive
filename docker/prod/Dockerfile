@@ -1,5 +1,5 @@
 # Step 1: Build the Next.js application
-FROM node:18 AS builder
+FROM node:20-slim AS builder
 
 # Set the working directory
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies inside the container
-RUN yarn install
+RUN yarn install --frozen-lockfile
 
 # Copy the rest of your application code into the container
 COPY . .
@@ -17,20 +17,20 @@ COPY . .
 RUN yarn build
 
 # Step 2: Prepare the production image
-FROM node:18 AS runner
+FROM node:20-slim AS runner
 
 # Set the working directory
 WORKDIR /app
 
+# Set NODE_ENV to production
+ENV NODE_ENV production
+
 # Copy only necessary files from the builder stage
-COPY --from=builder /app/next.config.js .
+COPY --from=builder /app/next.config.mjs .
 COPY --from=builder /app/package*.json ./
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
-
-# Install only production dependencies
-RUN yarn install --production
 
 # Expose the port the app runs on
 EXPOSE 3000
