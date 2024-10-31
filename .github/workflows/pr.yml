@@ -10,12 +10,18 @@ jobs:
       CI: true
 
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
     steps:
-      - name: checkout source
-        uses: actions/checkout@v2
 
       - name: setup node
         uses: actions/setup-node@v3
+
+      - name: check node version
+        run: node -v
 
       - name: install dependencies
         run: yarn install --immutable --immutable-cache --check-cache
