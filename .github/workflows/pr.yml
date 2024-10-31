@@ -1,24 +1,32 @@
 name: Test and build
 on:
   push:
-    branches: [ main]
+    branches: [main]
 
 jobs:
   build-and-test:
-    name: Build and test app
-    env:
-      CI: true
-
     runs-on: ubuntu-latest
 
-    steps:
-      - name: check node version
-        run: nvim install 20
+    strategy:
+      matrix:
+        node-version: [20]
 
-      - name: checkout source
-        uses: actions/checkout@v4
-        with: 
-          node-version: 20
+    name: Node ${{ matrix.node }} sample
+    steps:
+      # - name: install nvm
+      #   run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+
+      # - name: source .bashrc
+      #   run: source ~/.bashrc
+
+      # - name: check node version
+      #   run: nvim install 20
+
+      - name: setup node
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
 
       - name: check node version
         run: node -v
