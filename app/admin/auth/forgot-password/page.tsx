@@ -30,6 +30,9 @@ import {
 } from "@/components/dashboard/schema/main.schema";
 import { Input } from "@/components/ui/input";
 import { FaArrowLeft } from "react-icons/fa";
+
+export const dynamic = "force-dynamic";
+
 const ForgotPassword = () => {
   const form = useForm<IEmailSchema>({
     resolver: zodResolver(loginSchema),
