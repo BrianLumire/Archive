@@ -1,0 +1,30 @@
+name: Test and build
+on:
+  push:
+    branches: [ main]
+
+jobs:
+  build-and-test:
+    name: Build and test app
+    env:
+      CI: true
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout source
+        uses: actions/checkout@v2
+
+      - name: setup node
+        uses: actions/setup-node@v3
+
+      - name: install dependencies
+        run: yarn install --immutable --immutable-cache --check-cache
+
+      - name: build app
+        run: yarn build
+
+      - name: lint code
+        run: npm run lint
+
+      # - name: run tests
+      #   run: npm test
