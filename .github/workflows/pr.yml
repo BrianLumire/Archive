@@ -11,14 +11,11 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [20.x]
-
     steps:
-
-      - name: setup node
-        uses: actions/setup-node@v3
+      - name: checkout source
+        uses: actions/checkout@v4
+        with: 
+          node-version: 20
 
       - name: check node version
         run: node -v
