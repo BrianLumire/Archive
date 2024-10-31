@@ -4,41 +4,17 @@ on:
     branches: [main]
 
 jobs:
-  build-and-test:
-    name: Node ${{ matrix.node }} sample
+  build:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
-        node-version: [20]
-
+        node: [ 20 ]
+    name: Node ${{ matrix.node }} test
     steps:
-      # - name: install nvm
-      #   run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
-
-      # - name: source .bashrc
-      #   run: source ~/.bashrc
-
-      # - name: check node version
-      #   run: nvim install 20
-
-      - name: setup node
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
-
-      - name: check node version
-        run: node -v
-
-      - name: install dependencies
-        run: yarn install --immutable --immutable-cache --check-cache
-
-      - name: build app
-        run: yarn build
-
-      - name: lint code
-        run: npm run lint
-
-      # - name: run tests
-      #   run: npm test
+      - run: yarn install --immutable --immutable-cache --check-cache
+      - run: npm test
