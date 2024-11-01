@@ -123,7 +123,7 @@ export default function Footer() {
         </p>
         <p className="text-white text-sm font-nunito">
           Designed & Built by{" "}
-          <Link href="https://www.glitexsolutions.co.ke/" passHref>
+          <Link href="https://www.glitexsolutions.co.ke/" passHref  target="_blank">
             <span className="text-blue-500 hover:underline cursor-pointer font-nunito">
               Glitex Solutions
             </span>
