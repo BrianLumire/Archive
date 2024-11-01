@@ -104,7 +104,7 @@ export default function Navbar() {
 
       {/* Right side */}
       <div className="flex justify-center items-center gap-2">
-        <Link href="">
+        <Link href="#mentors">
           <button className="py-2 px-3 lg:py-3 lg:px-4 bg-white rounded-md font-bold text-sm text-blue-800">
             Become a Mentor
           </button>

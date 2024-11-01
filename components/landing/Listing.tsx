@@ -4,6 +4,7 @@ import Link from "next/link";
 export default function Listing() {
   return (
     <div
+      id="mentors"
       className="relative lg:h-[500px] h-[800px] pl-6  pt-4  flex flex-col lg:flex-row mb-14 bg-cover bg-center"
       style={{ backgroundImage: "url('/landing/connect-bg.png')" }}
     >
@@ -35,12 +36,17 @@ export default function Listing() {
         </div>
         <div className="flex items-center  gap-6 ">
           <Link href="/contact">
-            <button className="bg-white font-nunito py-2 px-6 rounded-lg text-base font-semibold text-[#A55FEF]">
+            <Link
+              href={`mailto:info@gmotivate.com?subject=${encodeURIComponent(
+                "Agent Application Request"
+              )}`}
+              className="bg-white text-nowrap font-nunito py-2 px-6 rounded-lg text-base font-semibold text-[#A55FEF]"
+            >
               Contact Us
-            </button>
+            </Link>
           </Link>
-          <Link href="/how-it-works">
-            <button className="flex items-center gap-3 font-nunito bg-white py-2 px-6 text-base font-semibold rounded-lg text-[#A55FEF]">
+          <Link href="#how-it-works">
+            <button className="flex items-center gap-3 text-nowrap font-nunito bg-white py-2 px-6 text-base font-semibold rounded-lg text-[#A55FEF]">
               <Image
                 src="/landing/play-icon.svg"
                 alt="Play icon"

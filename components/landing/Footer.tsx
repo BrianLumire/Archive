@@ -45,15 +45,24 @@ export default function Footer() {
           </h1>
           <ul className="list-none flex flex-col gap-2">
             <li className="text-white text-sm lg:pl-5 font-nunito">
-              How it Works
+              <Link
+                target="_blank"
+                href={"https://youtu.be/LdRuBmEljhg?si=XkICNq1R_VWP0-jd"}
+              >
+                How it Works
+              </Link>
             </li>
             <li className="text-white text-sm lg:pl-5 font-nunito">
-              Become a Mentor
+              <Link href={"#mentors"}>Become a Mentor</Link>
             </li>
-            <li className="text-white text-sm lg:pl-5 font-nunito">Videos</li>
-            <li className="text-white text-sm lg:pl-5 font-nunito">Books</li>
             <li className="text-white text-sm lg:pl-5 font-nunito">
-              Exam Materials
+              <Link href={"#videos"}>Videos</Link>
+            </li>
+            <li className="text-white text-sm lg:pl-5 font-nunito">
+              <Link href={"#books"}>Books</Link>
+            </li>
+            <li className="text-white text-sm lg:pl-5 font-nunito">
+              <Link href={"#how-it-works"}>Exam Materials</Link>
             </li>
           </ul>
         </div>
