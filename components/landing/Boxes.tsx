@@ -6,12 +6,12 @@ export default function Boxes() {
   return (
     <>
       <div className="mt-32 lg:mt-80 lg:min-h-[500px] flex flex-col mx-4 lg:mx-36 gap-16">
-        <span className="font-averia font-semibold text-xl text-center text-black">
+        <span id="how-it-works" className="font-averia font-semibold text-xl text-center text-black">
           Here's how it works
         </span>
 
         {/* Video Box */}
-        <div className="bg-[#3AAFFF1A] rounded-md flex flex-col lg:flex-row-reverse px-4 lg:pl-0 lg:min-h-[390px]">
+        <div id="videos" className="bg-[#3AAFFF1A] rounded-md flex flex-col lg:flex-row-reverse px-4 lg:pl-0 lg:min-h-[390px]">
           <div className="flex flex-col gap-10 lg:flex-1">
             <div className="flex items-center gap-6 pt-14 lg:pr-8">
               <Image src="/landing/video-icon.png" alt="" height={43} width={43} />
@@ -47,7 +47,7 @@ export default function Boxes() {
         </div>
 
         {/* Books Box */}
-        <div className="bg-[#FFF7ED] rounded-md flex flex-col lg:flex-row lg:min-h-[390px] px-4 lg:pr-0">
+        <div id="books" className="bg-[#FFF7ED] rounded-md flex flex-col lg:flex-row lg:min-h-[390px] px-4 lg:pr-0">
           <div className="flex flex-col gap-10 lg:flex-1 lg:pl-8 mb-16 ">
             <div className="flex items-center gap-6 pt-14">
               <Image src="/landing/bookspic.png" alt="" height={43} width={43} />
@@ -83,7 +83,7 @@ export default function Boxes() {
         </div>
 
         {/* Exam Box */}
-        <div className="bg-[#A55FEF1A] mb-16 rounded-md flex flex-col lg:flex-row-reverse px-4 lg:pl-0 lg:min-h-[380px]">
+        <div id="exam-materials" className="bg-[#A55FEF1A] mb-16 rounded-md flex flex-col lg:flex-row-reverse px-4 lg:pl-0 lg:min-h-[380px]">
           <div className="flex flex-col gap-10 lg:flex-1 mb-16">
             <div className="flex items-center gap-6 pt-14 lg:pr-8">
               <Image src="/landing/examspic.png" alt="" height={43} width={43} />

@@ -28,7 +28,7 @@ export default function RootLayout({
     //     <link href={averia} rel="stylesheet" />
     //   </head>
 
-      <section className={inter.className}>
+      <section className={`scroll-smooth ${inter.className}`}>
         {children}
       </section>
     // </html>

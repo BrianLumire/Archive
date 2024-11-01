@@ -6,10 +6,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const links = [
-  { url: "/how-it-works", title: "How it Works" },
-  { url: "/videos", title: "Videos" },
-  { url: "/books", title: "Books" },
-  { url: "/exam-materials", title: "Exam Materials" },
+  { url: "#videos", title: "Videos" },
+  { url: "#books", title: "Books" },
+  { url: "#exam-materials", title: "Exam Materials" },
 ];
 
 export default function Navbar() {
@@ -85,6 +84,15 @@ export default function Navbar() {
 
       {/* Large screen navbar links */}
       <div className="hidden md:flex gap-6 ">
+        <motion.div variants={listItemVariants}>
+          <Link
+            target="_blank"
+            href={"https://youtu.be/LdRuBmEljhg?si=XkICNq1R_VWP0-jd"}
+            className="hover:underline"
+          >
+            How it works
+          </Link>
+        </motion.div>
         {links.map((link) => (
           <Link key={link.title} href={link.url}>
             <span className="text-white text-sm xl:text-base font-semibold hover:underline">
@@ -132,6 +140,12 @@ export default function Navbar() {
             animate="opened"
             className="absolute top-0 left-0 w-screen h-screen bg-slate-400 bg-opacity-60 backdrop-blur-2xl text-slate-700 font-semibold flex flex-col items-center justify-center gap-8 text-xl z-40"
           >
+            <Link
+              target="_blank"
+              href={"https://youtu.be/LdRuBmEljhg?si=XkICNq1R_VWP0-jd"}
+            >
+              How it works
+            </Link>
             {links.map((link) => (
               <motion.div variants={listItemVariants} key={link.title}>
                 <Link href={link.url}>{link.title}</Link>
