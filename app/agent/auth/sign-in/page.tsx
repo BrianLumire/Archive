@@ -31,7 +31,7 @@ const Login = () => {
       setDisabled(true);
       await axios({
         method: "post",
-        url: "https://gmotivate.mwalimufinder.com/api/v1/users/phonenumber/login/",
+        url: "https://api.gmotivate.com/api/v1/users/phonenumber/login/",
         data: {
           phone_number: phoneNumber,
           password: password,

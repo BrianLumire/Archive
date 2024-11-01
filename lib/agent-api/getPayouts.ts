@@ -18,7 +18,7 @@ export function GetPayouts() {
       try {
         await axios({
           method: "get",
-          url: `https://gmotivate.mwalimufinder.com/api/v1/agents/payouts?page=${payoutsPageNumber}`,
+          url: `https://api.gmotivate.com/api/v1/agents/payouts?page=${payoutsPageNumber}`,
           headers: {
             Authorization: `Bearer ${accessToken}`, // Attach the JWT token
           },

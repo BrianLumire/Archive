@@ -38,7 +38,7 @@ const Password = () => {
         });
         await axios({
           method: "post",
-          url: "https://gmotivate.mwalimufinder.com/api/v1/users/user/password/change/",
+          url: "https://api.gmotivate.com/api/v1/users/user/password/change/",
           data: {
             old_password: oldPassword,
             password: newPassword,

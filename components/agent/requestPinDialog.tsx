@@ -28,7 +28,7 @@ const RequestPinDialog = () => {
         setDisabled(true);
         await axios({
           method: "post",
-          url: "https://gmotivate.mwalimufinder.com/api/v1/users/otp/phone/resend/",
+          url: "https://api.gmotivate.com/api/v1/users/otp/phone/resend/",
           data: {
             phone_number: phoneNumber,
           },

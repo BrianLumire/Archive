@@ -16,7 +16,7 @@ export function GetUserInfo() {
       try {
         await axios({
           method: "get",
-          url: `https://gmotivate.mwalimufinder.com/api/v1/users/user/`,
+          url: `https://api.gmotivate.com/api/v1/users/user/`,
           headers: {
             Authorization: `Bearer ${accessToken}`, // Attach the JWT token
           },

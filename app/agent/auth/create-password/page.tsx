@@ -38,7 +38,7 @@ const CreatePassword = () => {
         try {
           await axios({
             method: "post",
-            url: "https://gmotivate.mwalimufinder.com/api/v1/users/otp/set/password/",
+            url: "https://api.gmotivate.com/api/v1/users/otp/set/password/",
             data: {
               otp_code: OTP,
               password: password,

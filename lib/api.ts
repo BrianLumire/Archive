@@ -1,7 +1,7 @@
 import axios, { AxiosError, InternalAxiosRequestConfig } from "axios";
 import Cookies from "js-cookie";
-export const base_url = "https://gmotivate.mwalimufinder.com/api/v1";
-export const baseUrl = "https://gmotivate.mwalimufinder.com";
+export const base_url = "https://api.gmotivate.com/api/v1";
+export const baseUrl = "https://api.gmotivate.com";
 const api = axios.create({
   baseURL: base_url,
 });

@@ -100,7 +100,7 @@ const ManageProfile = () => {
         });
         await axios({
           method: "patch",
-          url: "https://gmotivate.mwalimufinder.com/api/v1/users/user/",
+          url: "https://api.gmotivate.com/api/v1/users/user/",
           data: filteredFormData,
           headers: {
             Authorization: `Bearer ${accessToken}`,

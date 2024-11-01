@@ -41,7 +41,7 @@ const AuthProvider = ({
       if (refreshToken !== null) {
         await axios({
           method: "post",
-          url: "https://gmotivate.mwalimufinder.com/api/v1/auth/token/refresh/",
+          url: "https://api.gmotivate.com/api/v1/auth/token/refresh/",
           data: {
             refresh: refreshToken,
           },

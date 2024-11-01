@@ -17,7 +17,7 @@ export function GetReferrals() {
       try {
         await axios({
           method: "get",
-          url: `https://gmotivate.mwalimufinder.com/api/v1/agents/referrals?page=${referralsPageNumber}`,
+          url: `https://api.gmotivate.com/api/v1/agents/referrals?page=${referralsPageNumber}`,
           headers: {
             Authorization: `Bearer ${accessToken}`, // Attach the JWT token
           },

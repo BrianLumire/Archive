@@ -20,7 +20,7 @@ export function GetRegions() {
       try {
         await axios({
           method: "get",
-          url: `https://gmotivate.mwalimufinder.com/api/v1/users/regions/list/`,
+          url: `https://api.gmotivate.com/api/v1/users/regions/list/`,
           headers: {
             Authorization: `Bearer ${accessToken}`, // Attach the JWT token
           },
