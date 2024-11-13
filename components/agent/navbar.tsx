@@ -117,11 +117,7 @@ const Navbar = () => {
                   {accessToken ? (
                     <>
                       <ManageProfile />
-                      <Link
-                        href={`mailto:support@gmotivate.com?subject=${encodeURIComponent(
-                          "Hello Support"
-                        )}`}
-                      >
+                      <Link target="_blank" href="mailto:info@gmotivate.com">
                         Contact Support
                       </Link>
                       <Password />
@@ -130,11 +126,7 @@ const Navbar = () => {
                       </Link>
                     </>
                   ) : (
-                    <Link
-                      href={`mailto:support@gmotivate.com?subject=${encodeURIComponent(
-                        "Hello Support"
-                      )}`}
-                    >
+                    <Link target="_blank" href="mailto:info@gmotivate.com">
                       Contact Support
                     </Link>
                   )}

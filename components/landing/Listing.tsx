@@ -1,3 +1,4 @@
+import { nunito } from "@/lib/agent-api/utils";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -22,13 +23,13 @@ export default function Listing() {
           className="lg:h-[350px] lg:w-[350px]"
         />
       </div>
-      <div className=" pr-8 lg:flex-1 lg:flex lg:flex-col   lg:justify-center">
+      <div className=" pr-8 lg:flex-1 lg:flex lg:flex-col lg:justify-center">
         <div className="pb-8">
-          <p className="pb-8 text-white text-base font-nunito">
+          <p className={`pb-8 text-white text-base ${nunito.className}`}>
             G-Motivate admins onboard new Mentors onto the Mentors network to
             reach more students in schools across the country.
           </p>
-          <p className="text-white text-base font-nunito">
+          <p className={`text-white text-base ${nunito.className}`}>
             An agent earns a commission when their referrals unlock videos,
             books, or exam materials on the app. However, a G-Motivate agent
             needs to be a teacher in a high school.
@@ -45,7 +46,7 @@ export default function Listing() {
               Contact Us
             </Link>
           </Link>
-          <Link href="#how-it-works">
+          {/* <Link href="#how-it-works">
             <button className="flex items-center gap-3 text-nowrap font-nunito bg-white py-2 px-6 text-base font-semibold rounded-lg text-[#A55FEF]">
               <Image
                 src="/landing/play-icon.svg"
@@ -55,7 +56,7 @@ export default function Listing() {
               />
               How it works
             </button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

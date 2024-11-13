@@ -86,7 +86,7 @@ const CreatePassword = () => {
     return router.push("/agent");
   }
   return (
-    <section className="h-[90svh] w-full mx-auto flex justify-center items-center">
+    <section className="h-[100svh] w-full mx-auto flex justify-center items-center">
       <div className="h-[95%] max-h-[700px] lg:max-h-[800px] w-11/12 lg:flex max-w-sm md:max-w-md lg:max-w-[1200px] rounded-xl lg:rounded-[40px] shadow-[1px_4px_10px_0px_#90909026] border-t-[.5px] border-t-gray-[#F5F5F5]">
         <ScrollArea className="flex flex-col items-center justify-start h-full lg:gap-24 py-5 lg:py-10 md:px-5 px-2 lg:w-[45%]">
           <div className="space-y-4 w-full px-2">

@@ -28,8 +28,7 @@ export default function Layout({
       className={`${inter.className} scroll-smooth antialiased w-[100vw] min-h-[100svh] relative bg-white`}
     >
       <AuthProvider>
-        <Navbar />
-        <DesktopNavbar />
+        
         {children}
         <Toaster position="top-center" reverseOrder={false} />
       </AuthProvider>

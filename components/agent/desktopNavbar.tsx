@@ -41,7 +41,7 @@ const DesktopNavbar = () => {
   function mailToSupport() {
     window
       ?.open(
-        `mailto:support@gmotivate.com?subject=${encodeURIComponent(
+        `mailto:info@gmotivate.com?subject=${encodeURIComponent(
           "Hello Support"
         )}`,
         "_blank"

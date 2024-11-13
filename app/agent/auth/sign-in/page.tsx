@@ -75,7 +75,7 @@ const Login = () => {
     return router.push("/agent");
   } else if (accessToken === null)
     return (
-      <section className="h-[90svh] w-full mx-auto flex justify-center items-center">
+      <section className="h-[100svh] w-full mx-auto flex justify-center items-center">
         <div className=" h-[95%] max-h-[700px] lg:max-h-[800px] w-11/12 lg:flex max-w-sm md:max-w-md lg:max-w-[1200px] rounded-xl lg:rounded-[40px] shadow-[1px_4px_10px_0px_#90909026] border-t-[.5px] border-t-gray-[#F5F5F5]">
           <section className="overflow-y-scroll no-scrollbar h-full flex flex-col justify-between py-5 md:px-5 px-2 lg:w-[45%]">
             <div className="space-y-4 w-full px-2 h-1/5">
@@ -157,7 +157,7 @@ const Login = () => {
                   </p>
                   <Link
                     className="text-[#3AAFFF] font-medium underline"
-                    href={`mailto:support@gmotivate.com?subject=${encodeURIComponent(
+                    href={`mailto:info@gmotivate.com?subject=${encodeURIComponent(
                       "Hello Support"
                     )}`}
                   >

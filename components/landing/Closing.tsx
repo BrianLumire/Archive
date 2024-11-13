@@ -1,5 +1,6 @@
 "use client"; // Use lowercase for 'use client'
 
+import { nunito, recoleta } from "@/lib/agent-api/utils";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,10 +9,10 @@ export default function Closing() {
     <div className="bg-[#A55FEF1A] pt-4 lg:mx-36 mb-16 rounded-lg mx-4 flex flex-col  lg:flex-row">
       <div className="mb-14 lg:flex-1">
         <div className="pl-4 lg:pl-14 pb-7">
-          <h1 className="text-[#3AAFFF] pb-5 text-2xl font-averia">
+          <h1 className={`text-[#3AAFFF] pb-5 text-2xl ${recoleta.className}`}>
             Join the Movement of Smart Learners
           </h1>
-          <p className="text-[#02256D] font-nunito">
+          <p className={`text-[#02256D] ${nunito.className}`}>
             Accelerate your learning and capacity development with G-Motivate
             resources that not only prepare your for academic success but also
             equip you with life and street skills to get you ahead of the rest.

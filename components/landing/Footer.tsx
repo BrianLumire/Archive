@@ -80,7 +80,7 @@ export default function Footer() {
                 width={20}
                 height={20}
               />
-              <span className="text-white text-sm font-nunito">0700112233</span>
+              <span className="text-white text-sm font-nunito">0713582296 / 0716044379</span>
             </li>
             <li className="flex gap-2 lg:pl-2">
               <Image
@@ -90,7 +90,7 @@ export default function Footer() {
                 height={20}
               />
               <span className="text-white text-sm font-nunito">
-                gmotivate@gmail.com
+                info@gmotivate.com
               </span>
             </li>
             <li className="flex gap-2 lg:pl-2">

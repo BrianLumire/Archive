@@ -1,5 +1,7 @@
+import DesktopNavbar from "@/components/agent/desktopNavbar";
 import "../../globals.css";
 import Footer from "@/components/agent/footer";
+import Navbar from "@/components/agent/navbar";
 import React from "react";
 
 export default function Layout({
@@ -9,6 +11,8 @@ export default function Layout({
 }>) {
   return (
     <div>
+      <Navbar />
+      <DesktopNavbar />
       {children}
       <Footer />
     </div>
