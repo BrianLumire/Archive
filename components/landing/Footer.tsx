@@ -39,37 +39,36 @@ export default function Footer() {
 
         {/* Center Section */}
 
-        <div className="flex flex-col gap-8 flex-1 lg:items-center">
-          <h1 className="text-white text-xl font-medium font-nunito">
+        <div className="flex flex-col gap-5 flex-1 justify-start">
+          <h1 className="text-white text-xl font-medium font-nunito lg:pl-5">
             Sitemap
           </h1>
           <ul className="list-none flex flex-col gap-2">
             <li className="text-white text-sm lg:pl-5 font-nunito">
+              <Link href={"/#mentors"}>Become a Mentor</Link>
+            </li>
+            <li className="text-white text-sm lg:pl-5 font-nunito">
+              <Link href={"/#videos"}>Videos</Link>
+            </li>
+            <li className="text-white text-sm lg:pl-5 font-nunito">
+              <Link href={"/#books"}>Books</Link>
+            </li>
+            <li className="text-white text-sm lg:pl-5 font-nunito">
+              <Link href={"/#how-it-works"}>Exam Materials</Link>
+            </li>
+            <li className="text-white text-sm lg:pl-5 font-nunito">
               <Link
-                target="_blank"
-                href={"https://youtu.be/LdRuBmEljhg?si=XkICNq1R_VWP0-jd"}
+                href={"/terms-of-use-and-privacy-policy"}
               >
-                How it Works
+                Terms of Use and Privacy Policy
               </Link>
-            </li>
-            <li className="text-white text-sm lg:pl-5 font-nunito">
-              <Link href={"#mentors"}>Become a Mentor</Link>
-            </li>
-            <li className="text-white text-sm lg:pl-5 font-nunito">
-              <Link href={"#videos"}>Videos</Link>
-            </li>
-            <li className="text-white text-sm lg:pl-5 font-nunito">
-              <Link href={"#books"}>Books</Link>
-            </li>
-            <li className="text-white text-sm lg:pl-5 font-nunito">
-              <Link href={"#how-it-works"}>Exam Materials</Link>
             </li>
           </ul>
         </div>
 
         {/* Bottom Section */}
-        <div className="flex-1 flex flex-col lg:items-center gap-4">
-          <h1 className="text-white text-xl font-medium font-nunito">
+        <div className="flex-1 flex flex-col gap-5">
+          <h1 className="text-white text-xl font-medium font-nunito lg:pl-2">
             Connect with us
           </h1>
           <ul className="list-none flex flex-col gap-5">
@@ -80,7 +79,9 @@ export default function Footer() {
                 width={20}
                 height={20}
               />
-              <span className="text-white text-sm font-nunito">0713582296 / 0716044379</span>
+              <span className="text-white text-sm font-nunito">
+                0713582296 / 0716044379
+              </span>
             </li>
             <li className="flex gap-2 lg:pl-2">
               <Image
@@ -123,7 +124,11 @@ export default function Footer() {
         </p>
         <p className="text-white text-sm font-nunito">
           Designed & Built by{" "}
-          <Link href="https://www.glitexsolutions.co.ke/" passHref  target="_blank">
+          <Link
+            href="https://www.glitexsolutions.co.ke/"
+            passHref
+            target="_blank"
+          >
             <span className="text-blue-500 hover:underline cursor-pointer font-nunito">
               Glitex Solutions
             </span>

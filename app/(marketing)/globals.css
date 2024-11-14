@@ -1,3 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Import Sansita and Nunito fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;600&family=Nunito:wght@400;600&display=swap');
+
+/* Define a class for the Sansita font */
+.font-sansita {
+  font-family: 'Sansita', sans-serif;
+}
+
+
+/* Define a class for the Nunito font */
+.font-nunito {
+  font-family: 'Nunito', sans-serif;
+}

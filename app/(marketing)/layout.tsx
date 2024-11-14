@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/landing/Navbar";
+import Footer from "@/components/landing/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const sansita = "https://fonts.googleapis.com/css2?family=Sansita:wght@400;600&display=swap";
-const nunito = "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap";
-const averia = "https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap";
-
 export const metadata: Metadata = {
-  title: "G-Motivate Terms",
-  description: "Terms & Conditions",
+  title: "G-Motivate",
+  description:
+    "Access Comprehensive Mentorship,Informational and Educational Content.",
 };
 
 export default function RootLayout({
@@ -28,9 +27,10 @@ export default function RootLayout({
     //     <link href={averia} rel="stylesheet" />
     //   </head>
 
-      <section className={`scroll-smooth ${inter.className}`}>
-        {children}
-      </section>
+    <section className={`scroll-smooth ${inter.className}`}>
+      {children}
+      <Footer />
+    </section>
     // </html>
   );
 }

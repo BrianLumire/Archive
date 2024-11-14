@@ -2,7 +2,6 @@
 
 import Boxes from "@/components/landing/Boxes";
 import Closing from "@/components/landing/Closing";
-import Footer from "@/components/landing/Footer";
 import Hero from "@/components/landing/Hero";
 import Listing from "@/components/landing/Listing";
 import Navbar from "@/components/landing/Navbar";
@@ -18,7 +17,6 @@ const Page = () => {
       <Boxes />
       <Listing />
       <Closing />
-      <Footer />
     </>
   );
 };

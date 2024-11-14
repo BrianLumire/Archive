@@ -6,9 +6,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const links = [
-  { url: "#videos", title: "Videos" },
-  { url: "#books", title: "Books" },
-  { url: "#exam-materials", title: "Exam Materials" },
+  { url: "/#videos", title: "Videos" },
+  { url: "/#books", title: "Books" },
+  { url: "/#exam-materials", title: "Exam Materials" },
 ];
 
 export default function Navbar() {
@@ -72,7 +72,7 @@ export default function Navbar() {
   return (
     <div className=" mb-14 flex px-4 sm:px-6 lg:px-10 xl:px-24 pt-3 justify-between items-center">
       {/* Logo */}
-      <div className="flex items-center justify-center">
+      <Link href={"/"} className="flex items-center justify-center">
         <Image
           src="/landing/logo.svg"
           alt=""
@@ -80,15 +80,14 @@ export default function Navbar() {
           height={70}
           className="w-16 h-16 sm:w-20 sm:h-20"
         />
-      </div>
+      </Link>
 
       {/* Large screen navbar links */}
       <div className="hidden md:flex gap-6 ">
         <motion.div variants={listItemVariants}>
           <Link
-            target="_blank"
-            href={"https://youtu.be/LdRuBmEljhg?si=XkICNq1R_VWP0-jd"}
-            className="hover:underline"
+            href={"/#how-it-works"}
+            className="hover:underline font-semibold"
           >
             How it works
           </Link>
@@ -104,7 +103,7 @@ export default function Navbar() {
 
       {/* Right side */}
       <div className="flex justify-center items-center gap-2">
-        <Link href="#mentors">
+        <Link href="/#mentors">
           <button className="py-2 px-3 lg:py-3 lg:px-4 bg-white rounded-md font-bold text-sm text-blue-800">
             Become a Mentor
           </button>
