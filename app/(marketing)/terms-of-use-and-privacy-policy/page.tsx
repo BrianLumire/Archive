@@ -20,8 +20,10 @@ const Page = () => {
         {/*hero section */}
         <TermsOfUseHero />
       </div>
-      <TermsOfUse />
-      <PrivacyPolicy />
+      <section className="w-full max-w-[1500px] mx-auto">
+        <TermsOfUse />
+        <PrivacyPolicy />
+      </section>
     </section>
   );
 };
